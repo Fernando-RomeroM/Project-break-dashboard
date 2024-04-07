@@ -25,10 +25,11 @@
 
     const fecha_actual = () => {
         const fechah = new Date()
-        let semana = fechah.getMonth()
+        let mes = fechah.getMonth()
         let dia = fechah.getDay()
         let anno = fechah.getFullYear()
 
-        fechaHoy.innerText = `${semana} / ${dia} / ${anno}`
+        fechaHoy.innerText = `${mes} / ${dia} / ${anno}`
     }
  
+    fecha_actual()
