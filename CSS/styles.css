@@ -9,13 +9,13 @@ body {
 .nave {
     width: 100%;
     margin-top: -100px;
-    
-}
-.iconos {
-    width: 40px;
-    padding-left: 10px;
 }
 .icons {
     display: flex;
     list-style: none;
+    justify-content: center;
+}
+.iconos {
+    width: 40px;
+    padding-left: 10px;
 }

@@ -1,12 +1,31 @@
+const password = document.getElementById("pass"),
+    copy = document.getElementById("copy"),
+    generatePassword = document.getElementById("generatePass"),
+    length = 12;
 
-function logeo() {
-    let user = document.getElementById("Usuario").value
-    let pass = document.getElementById("password").value
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      lowerCase = "abcdefghijklmnopqrstuvwxyz",
+      number = "0123456789",
+      symbol = "@#$%&/()=?¿^*¨_:<>.;",
+      allChars = upperCase + lowerCase + number + symbol;
 
-    if(user=="Juan" && pass=="1234") {
-        window.location="https://www.youtube.com/watch?v=9nkg00WkzvA"
-    } else {
-        alert("Contraseña incorrepta, se ha activado el mecanismo de autodestrucción")
-    } 
+
+generatePassword.addEventListener("click", generatePass);
+
+function generatePass() {
+    let pass = "";
+    pass += upperCase[Math.floor(Math.random() * upperCase.length)]
+    pass += lowerCase[Math .floor(Math.random() * lowerCase.length)]
+    pass += number[Math.floor(Math.random() * number.length)]
+    pass += symbol[Math.floor(Math.random() * symbol.length)]
+    
+    while (length > pass.length) pass += allChars[Math.floor(Math.random() * allChars.length)]
+    
+    password.value = pass;
 }
-console.log("hola mundo")
+
+function copyPass() {
+    password.select();
+    document.execCommand("copy");
+
+}
