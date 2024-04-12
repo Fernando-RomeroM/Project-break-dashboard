@@ -7,6 +7,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("../img/space4.jpg");
+    width: 100%;
+}
+.dins {
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 340px;
+    height: 180px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 #pass {
@@ -22,3 +31,13 @@ body {
 }
 
 
+h3 {
+    text-align: center;
+    color: lime;
+    font-family: "Space Grotesk", sans-serif;
+}
+#generatePass {
+    background-color: black;
+    border-color: khaki;
+    color: khaki;
+}
