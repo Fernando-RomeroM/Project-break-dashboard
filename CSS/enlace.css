@@ -1,0 +1,27 @@
+.enlaceTodo {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 0, 0.4);
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: khaki;
+
+}
+.enlaceText {
+    width: 260px;
+    height: 30px;
+}
+.enlaceBtn {
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    border: 1 solid;
+}
+.btn-delete {
+
+}
+ul {
+    list-style: none;
+}
